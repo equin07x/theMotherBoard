@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Motherboard</title>
+    
+  </head>
+<body>
+  <section class="content-editor">
+    <div class="editors-pick">
+      <div class="vertical-bar"></div>
+      <h3>Editors' Picks</h3>
+    </div>
+
+    <div class="row">
+      <div class="editorials">
+        <img>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</h3>
+      </div>
+      <div class="editorials">
+        <img>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</h3>
+      </div>
+      <div class="editorials">
+        <img>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</h3>
+      </div>
+      <div class="editorials">
+        <img>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</h3>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Oswald:wght@200..700&display=swap');
+
+.body {
+  font-family: 'Mona Sans';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1440px;
+}
+
+.content-editor {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.editorials img {
+  border-radius: 10px;
+  background-color: rgb(168, 168, 168);
+  width: 300px;
+  height: 200px;
+}
+
+.editors-pick {
+  display: flex;
+  align-items: start;
+  gap: 9px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+}
+
+.editors-pick .vertical-bar {
+  width: 5px;
+  height: 32px;
+  background-color: #F3FF00;
+}
+
+.editors-pick h3 {
+  font-size: 1.46em;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Oswald';
+}
+
+.editors-pick h3:hover {
+  color: #F3FF00;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 15px;
+  overflow-x: auto;
+  padding-bottom: 0px;
+  padding-left: 12px;
+}
+
+.row .editorials {
+  flex: 0 0 calc(25% - 1px);
+  max-width: calc(25% - 15px); /* Ensure consistency in sizing */
+  text-align: center;
+  perspective: 1000px;
+}
+
+.row .editorials img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(168, 168, 168);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;;
+}
+
+.editorials img:hover {
+  transform: translateZ(7px) scale(1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.row .editorials h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #020202;
+  margin: 0;
+  line-height: 1.4;
+  text-align: left;
+  font-family: 'Mona Sans';
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.editorials h3:hover {
+  text-decoration: underline;
+  color: #020202;
+}
+</style>
+
+<script></script>   
